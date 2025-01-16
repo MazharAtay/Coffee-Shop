@@ -33,15 +33,15 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
+/* html::-webkit-scrollbar çıkan scrol'un kapladığı alandır. */
 html::-webkit-scrollbar {
   width: 0.8rem;
 }
-
+/* html::-webkit-scrollbar-track scroolun arka planıdır. */
 html::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
+/* html::-webkit-scrollbar-thumb scrrol kısmında tutulan alana karşılık gelir. */
 html::-webkit-scrollbar-thumb {
   background-color: white;
   border-radius: 5rem;
@@ -120,6 +120,8 @@ header .icons {
   display: none;
 }
 
+/* * Home */
+
 .home {
   min-height: 100vh;
   display: flex;
@@ -130,7 +132,7 @@ header .icons {
 }
 
 .home .content {
-  max-width: 60;
+  max-width: 60rem;
 }
 
 .home .content h3 {
@@ -147,6 +149,7 @@ header .icons {
 }
 
 /* *About US */
+
 .about .row {
   display: flex;
   align-items: center;
@@ -155,7 +158,9 @@ header .icons {
 
 .about .row .image {
   flex: 1 1 45rem;
+  padding: 2rem;
 }
+
 .about .row .image img {
   width: 100%;
 }
@@ -182,21 +187,25 @@ header .icons {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
+
 .menu .box-container .box {
 border: var(--border-color);
 padding: 5rem;
 text-align: center;
 transition: all 0.4s;
 }
+
 .menu .box-container .box h3 {
     font-size: 2rem;
     padding: 1rem 0;
 }
+
 .menu .box-container .box .price {
     font-size: 2.5rem;
     padding: 0.5rem 0;
 
 }
+
 .menu .box-container .box .price span {
     font-size: 1.5rem;
     font-weight: lighter;
@@ -209,22 +218,27 @@ transition: all 0.4s;
     width: 10rem;
     border-radius: 50%;
 }
+
 .menu .box-container .box:hover {
     background-color: white;
     color: black;
     cursor: pointer;
 }
+
 /* *Products */
+
 .products .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
+
 .products .box-container .product-box {
 border: var(--border-color);
 padding: 2rem;
 text-align: center;
 }
+
 .products .box-container .product-box .image {
 padding: 2.5rem 0;
 }
@@ -295,6 +309,7 @@ color: var(--main-color);
 }
 
 /* *Contact */
+
 .contact .row {
   display: flex;
   background-color: var(--black-color);
@@ -334,17 +349,22 @@ text-transform: none;
 background:none;
 color: white;
 }
+
 .btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .btn-container .btn {
   width: 100%;
 }
+
 .btn-container .btn:hover {
   scale: 0.9;
 }
+
+/* Bir inputun pleaceholder rengini düzenleme. */
 
 .contact .row form .input-box input::placeholder {
 color: whitesmoke;
@@ -361,7 +381,9 @@ color: whitesmoke;
 .blogs .box-container .box {
 border: var(--border-color);
 }
+
 /* Box'a hover olduğunda, image'e hover özelliği ver. */
+
 .blogs .box-container .box:hover > .image img {
   scale: 1.2;
 }
@@ -384,9 +406,10 @@ padding: 2rem;
 
 .blogs .box-container .box .content a {
 color: white;
-font-size: 2.8rem;
+font-size: 2.5rem;
 line-height: 1.5rem;
 }
+
 .blogs .box-container .box .content a:hover {
   color: var(--main-color);
 }
@@ -400,12 +423,13 @@ font-size: 1.5rem;
 
 .blogs .box-container .box .content p {
 font-size: 1.8rem;
-line-height: 1.8rem;
+line-height: 1.8;
 padding: 1rem 0;
 color: #ccc;
 }
 
 /* *Footer */
+
 footer {
   background-color: var(--black-color);
   text-align: center;
@@ -418,6 +442,7 @@ footer .icons {
   justify-content: center;
   gap: 1rem;
 }
+
 footer .icons i {
   height: 5rem;
   width: 5rem;
@@ -425,6 +450,8 @@ footer .icons i {
   font-size: 2rem;
   display: grid;
   place-items: center;
+   /*  display: grid;
+  place-items: center; iconları ortalamak için kullanıldı  */
   border: var(--border-color);
 }
 
@@ -468,9 +495,11 @@ footer .copyright span {
   header {
     padding: 1.5rem 2rem;
   }
+
   header .icons {
     display: block;
   }
+
   header nav {
     position: absolute;
     top: 120%;
@@ -484,26 +513,32 @@ footer .copyright span {
     box-shadow: 0 0 10px var(--main-color);
     text-align: center;
   }
+
   header nav.active {
     display: flex;
   }
+
   section {
     padding: 2rem;
   }
+
   .home {
     background-position: left;
     justify-content: center;
     text-align: center;
   }
+
   .home .content h3 {
     font-size: 4.5rem;
   }
+
   .about .row .content h3 {
     font-size: 2.5rem;
   }
   .about .row .content p {
     font-size: 1.3rem;
   }
+
   .btn-container .btn {
     width: 200px;
   }
@@ -513,6 +548,7 @@ footer .copyright span {
   header .icons i {
     font-size: 2rem;
   }
+  
   html {
     font-size: 50%;
   }
